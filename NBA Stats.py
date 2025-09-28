@@ -1,6 +1,5 @@
 from nba_api.stats.static import players
 from nba_api.stats.endpoints import playercareerstats
-import pandas as pd
 
 # Input for the name
 name = input("Enter a player's full name: ")
@@ -36,4 +35,5 @@ df_selected = df_selected.rename(columns={
 
 # Display the data
 print('\nShooting Percentages by Season:\n')
+
 print(df_selected.to_string(index=False))
